@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Condicionales JS </title>
+</head>
+<body>
+    <h1> Mostrar saludo </h1>
+    <button onclick="mostrarSaludo()"> Mostrar saludo </button>
+
+    <script>
+        function mostrarSaludo() {
+            let hora = new Date().getHours();
+            if (hora >= 6 && hora <= 12) {
+                alert("Buenos días");
+            } 
+            
+            else if (hora >= 13 && hora <= 19) {
+                alert("Buenas tardes");
+            }
+            
+            else {
+                alert("Buenas noches");
+            }
+        }
+    </script>
+</body>
+</html>

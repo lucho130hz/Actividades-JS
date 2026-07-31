@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Condicionales JS </title>
+</head>
+<body>
+    <h1> Evaluar Nota </h1>
+    <input type="number" id="nota">
+    <button onclick="evaluarNota()"> Evaluar nota </button>
+
+    <script>
+        function evaluarNota() {
+            let nota = document.getElementById("nota").value;
+            if (nota >= 6) {
+                alert("Aprobado");
+            } 
+            
+            else {
+                alert("Desaprobado");
+            }
+        }
+    </script>
+</body>
+</html>

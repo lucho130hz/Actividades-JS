@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Condicionales JS </title>
+</head>
+<body>
+    <h1> Elegir un color </h1>
+    <select id="color">
+        <option value="red">Rojo</option>
+        <option value="blue">Azul</option>
+        <option value="green">Verde</option>
+    </select>
+
+    <button onclick="aplicarColor()"> Aplicar color </button>
+
+    <script>
+        function aplicarColor() {
+            let color = document.getElementById("color").value;
+            document.body.style.backgroundColor = color;
+        }
+    </script>
+</body>
+</html>

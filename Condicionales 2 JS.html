@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Condicionales JS </title>
+</head>
+<body>
+    <h1> Verificar Contraseña </h1>
+    <input type="password" id="clave">
+    <button onclick="verificarClave()"> Ingresar </button>
+
+    <script>
+        function verificarClave() {
+            let clave = document.getElementById("clave").value;
+            if (clave == "1234") {
+                alert("Acceso permitido");
+            } 
+            
+            else {
+                alert("Acceso denegado");
+            }
+        }
+    </script>
+</body>
+</html>

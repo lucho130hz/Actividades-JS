@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Condicionales JS </title>
+</head>
+<body>
+    <h1> Validar edad </h1>
+    <input type="number" id="edad">
+    <button onclick="verificarEdad()"> Validar edad </button>
+
+    <script>
+        function verificarEdad() {
+            let edad = document.getElementById("edad").value;
+            if (edad >= 18) {
+                alert("Eres mayor de edad");
+            } 
+            
+            else {
+                alert("Eres menor de edad");
+            }
+        }
+    </script>
+</body>
+</html>
